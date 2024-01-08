@@ -1,0 +1,65 @@
+body{
+	margin:0;
+	padding:0; 
+	border: 0;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(aboutus.jpg);
+	background-size: cover;
+	font-family: sans-serif;
+	transition: 0.5s ease;
+	font-size: 50px;
+}
+.main h1{
+	margin-left: 1px;
+	padding: 10px;
+	font-family: sans-serif;
+	font-size: 100px;
+	color:#fff;
+	transition: 1s ease;
+	display: inline-block;
+}
+.nimish{
+	color: white;
+	margin-left: 100px;
+}
+.deep{
+	color: white;
+	margin-left: 100px;
+}
+.sid{
+	color: white;
+	margin-left: 100px;
+}
+/*.line{
+	size:10px;
+	color: white;
+	padding: 10px;
+	margin-left: 80px;
+}*/
+ul{
+	list-style-type: none;
+	float:right;
+	margin-top: 25px;
+	margin-left:0px;
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color:#fff;
+	padding: 5px 20px;
+	border: 1px transparent #fff;	
+	border-radius: 10px;
+}
+ul li a:hover{
+	background-color: white;
+	color:black;
+}
+ul li.active a{
+	background-color: white;
+	color:black;
+}
+.main{
+	max-width: 1200px;
+	margin:auto;
+}

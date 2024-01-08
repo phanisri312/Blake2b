@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sign up</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+	<style type="text/css">
+		body {
+			padding: 0;
+			margin: 0;
+			border: 0;
+			background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://thewallpapers.org/zoom/44559/sunset-hills.jpg");
+			background-size: cover;
+			color: white;
+		}
+ 
+		::placeholder {
+			color: white;
+		}
+
+		h1 {
+			transform: translate(45%, 10%);
+			font-size: 35px;
+			font-family: sans-serif;
+		}
+
+		.field {
+			font-size: 20px;
+			padding: 20px;
+			height: 20px;
+			padding-left: 30px;
+		}
+
+		.field input[type="text"],
+		.field input[type="password"] {
+			background: transparent;
+			border: 1px blue solid;
+			border-radius: 5px;
+			color: white;
+			text-align: center;
+		}
+
+		.field input[type="submit"] {
+			background: transparent;
+			color: white;
+		}
+
+		.field input[type="radio"] {
+			border: red;
+		}
+	</style>
+</head>
+
+<body>
+	<form class="form" method="post">
+		<h1> Sign up </h1>
+		<style type="text/css">
+			body {
+				padding: 0;
+				margin: 0;
+				border: 0;
+
+				background-size: cover;
+				color: white;
+			}
+
+			::placeholder {
+				color: white;
+			}
+
+			h1 {
+				transform: translate(45%, 10%);
+				font-size: 20px;
+				font-family: sans-serif;
+			}
+
+			.field {
+				font-size: 20px;
+				padding: 20px;
+				height: 20px;
+				padding-left: 30px;
+				text-align: center;
+			}
+
+			.field input[type="text"],
+			.field input[type="password"] {
+				background: transparent;
+				border: 1px blue solid;
+				border-radius: 5px;
+				color: white;
+				text-align: center;
+			}
+
+			.field input[type="submit"] {
+				background: transparent;
+				color: white;
+			}
+
+			.field input[type="radio"] {
+				border: red;
+			}
+		</style>
+		<div class="field">
+			Name:&nbsp;<input type="text" name="name" id="name" placeholder="Name"><br><br>
+			Address: &nbsp;<input type="text" name="address" id="address" placeholder="Address"><br><br>
+			Phone Number: &nbsp;<input type="text" name="phno" id="phno" placeholder="Ph. No"><br><br>
+			Username: &nbsp; <input type="text" name="username" id="username" placeholder="Username"><br><br>
+			Password: &nbsp; <input type="Password" name="password" id="password"><br><br>
+			Select age group:
+			<br><br>
+			<input type="radio" name="type" id="children" value="Children"> Child <br><br>
+			<input type="radio" name="type" id="adult" value="Adult"> Teenage <br><br>
+			<input type="radio" name="type" id="elder" value="Elder"> Adult <br><br>
+			<input type="submit"><br><br>
+		</div>
+	</form>
+	<script>
+		$.ajax({
+			url: "/signup",
+			method: "POST",
+			data: { success:true },
+			cache: false,
+			success: function (data) {
+				// data is the object that you send form the server by 
+				// res.jsonp();
+				// here data = {success : true}
+				// validate it
+				if (data['success']) {
+					alert("message you want to show");
+				}
+			},
+			error: function () {
+				// some error handling part
+				alert("Oops! Something went wrong.");
+			}
+		});
+	</script>
+
+</body>
+
+</html>

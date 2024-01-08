@@ -1,0 +1,53 @@
+body{
+	margin:0;
+	padding:0;
+	border: 0;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('student.jpg');
+	background-size: cover;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: white;
+	transition: 1s ease;
+}
+.school h1{
+	border: 2px solid white;
+	display: inline-block;
+	cursor: pointer;
+}
+.school{
+	transform: translate(10px);
+}
+.univ{
+	transform: translate(10px);
+}
+.comp{
+	transform: translate(10px);
+}
+select{ 
+	background: black;
+	color: white;
+	border: 1px solid;
+	width: 15em;
+	height: 2em;
+	appearance:none;
+	box-shadow: none;
+	transition: 0.8s ease;
+	position: center;
+}
+.booksch{
+	background: transparent;
+}
+.button{
+	width: 10em;
+	height:10em;
+	background: transparent;
+}
+.univ h1{
+	border: 2px solid white;
+	display: inline-block;
+}
+.comp h1{
+	border: 2px solid white;
+	display: inline-block;
+	width:265px;
+}

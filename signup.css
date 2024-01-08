@@ -1,0 +1,27 @@
+body{
+	padding: 0;
+	margin:0;
+	border: 0;
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(signup.jpg);
+	background-size: cover;
+	color: white;
+}
+h1{
+	transform: translate(45%,10%);
+	font-size: 50px;
+	font-family: sans-serif;
+}
+.field{
+	font-size:30px;
+	padding: 20px;
+	height: 20px;
+	padding-left: 30px;
+}
+input[type=text]{
+	background: transparent;
+	color:white; 
+	height: 20px;
+}
+input[type=submit]{
+	font-size: 30px;
+}
